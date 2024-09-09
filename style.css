@@ -1,0 +1,208 @@
+/* Basic reset */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #000; /* Black background */
+    color: #fff;
+    padding: 10px 20px; /* Add some horizontal padding */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Distributes space between left and right sections */
+    align-items: center; /* Vertically centers the content */
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Remove default list styling for all nav lists */
+}
+
+nav ul.left {
+    margin-right: auto; /* Pushes the left-aligned items to the left */
+}
+
+nav ul.right {
+    margin-left: auto; /* Pushes the right-aligned items to the right */
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative; /* Required for the pseudo-element positioning */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s; /* Add transition for color and transform */
+}
+
+nav ul li a:hover {
+    color: #f39c12; /* Hover color */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+nav ul.left li {
+    list-style: none; /* Ensure no bullets for individual list items */
+}
+
+nav ul.left li.barbo a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Position below the text */
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    background-color: #f39c12; /* Underline color */
+    transition: width 0.3s; /* Smooth transition for the underline */
+}
+
+nav ul.left li.barbo a:hover::after {
+    width: 100%; /* Underline expands to full width on hover */
+}
+
+/* Hero Section */
+#hero {
+    /* Removed background image */
+    background-color: #333; /* Added a fallback background color */
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+/* Services Section */
+#our-services {
+    /* Removed background image */
+    background-color: #444; /* Added a fallback background color */
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#our-services h2 {
+    margin-bottom: 20px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for transform and box-shadow */
+}
+
+.service img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for transform and box-shadow */
+}
+
+.service:hover img {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.service h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.service p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* CTA Section */
+#cta {
+    /* Removed background image */
+    background-color: #f39c12; /* Added a fallback background color */
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#cta h2 {
+    margin-bottom: 20px;
+}
+
+#cta p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+#cta .cta-button {
+    background-color: #fff;
+    color: #f39c12;
+    border: 2px solid #f39c12;
+    padding: 10px 20px;
+}
+
+#cta .cta-button:hover {
+    background-color: #f39c12;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Footer styles */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
