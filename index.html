@@ -15,8 +15,10 @@
             <ul class="right">
                 <li><a href="#our-services">Our Services</a></li>
                 <li><a href="#About-US"> About Us</a></li>
+                <li><a href="#bookslot">Book Your Slot</a></li>
                 <li><a href="#join-us">Join Us</a></li>
                 <li><a href="#contact">Contact</a></li>
+                
             </ul>
         </nav>
     </header>
@@ -25,8 +27,54 @@
         <!-- Hero Section -->
         <section id="hero">
             <div class="hero-content">
-                <h1>WELCOME TO BARBO </h1>
-                <p>"WHY TO WAIT WHEN YOU CAN BOOK IT."</p>
+                <h1>WELCOME TO BARBO </h1>    
+    <section class="auth-section">
+        <div class="containersign">
+            <div class="form-container">
+                <div class="form-toggle">
+                    <button id="signInBtn" onclick="toggleForm('sign-in')">Sign In</button>
+                    <button id="signUpBtn" onclick="toggleForm('sign-up')">Sign Up</button>
+                </div>
+
+                <!-- Sign In Form -->
+                <form id="signInForm" class="auth-form" action="#" method="post">
+                    <h2>Sign In</h2>
+                    <label for="signin-email">Email:</label>
+                    <input type="email" id="signin-email" name="signin-email" required placeholder="Enter your email">
+
+                    <label for="signin-password">Password:</label>
+                    <input type="password" id="signin-password" name="signin-password" required placeholder="Enter your password">
+
+                    <button type="submit">Sign In</button>
+                </form>
+
+                <!-- Sign Up Form -->
+                <form id="signUpForm" class="auth-form hidden" action="#" method="post">
+                    <h2>Sign Up</h2>
+                    <label for="signup-name">Name:</label>
+                    <input type="text" id="signup-name" name="signup-name" required placeholder="Enter your name">
+
+                    <label for="signup-email">Email:</label>
+                    <input type="email" id="signup-email" name="signup-email" required placeholder="Enter your email">
+
+                    <label for="signup-password">Password:</label>
+                    <input type="password" id="signup-password" name="signup-password" required placeholder="Enter your password">
+
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+
+            <!-- Get Location Button and Display -->
+            <div class="location-section">
+                <button id="getLocationBtn">Get My Location</button>
+                <p id="locationOutput"></p>
+            </div>
+        </div>
+    </section>
+
+    
+
+
                 <!-- <a href="#book-slot" class="cta-button">Book Now</a> -->
             </div>
         </section>
@@ -60,10 +108,121 @@
             <a href="#book-slot" class="cta-button">Book Now</a>
             <P></P>
         </section>
+        <section class="about-us">
+            <div class="container">
+                <h1>About Us</h1>
+                <p>Welcome to <strong>BARBO</strong> – Revolutionizing Your Barber Experience</p>
+                
+                <p>At BARBO, we believe your time is valuable, and waiting in line for a haircut shouldn’t be part of your day. That’s why we created an innovative solution that eliminates the hassle of long waits at the barbershop. Our platform allows you to book slots at your favorite barbershop in advance, giving you the freedom to plan your visit at a time that suits you best.</p>
+    
+                <h2>Our Mission</h2>
+                <p>Our mission is simple: to transform the traditional barbershop experience by reducing wait times and bringing convenience to your grooming routine. With BARBO, you can enjoy a smooth, seamless booking process and more time doing what matters most.</p>
+    
+                <h2>Why BARBO?</h2>
+                <ul>
+                    <li><strong>No More Waiting:</strong> Book your slot and avoid the queues. Show up when it’s your turn, and enjoy a hassle-free visit.</li>
+                    <li><strong>Real-Time Availability:</strong> See up-to-date schedules of your preferred barbers and choose the time that works for you.</li>
+                    <li><strong>Trusted Barbershops:</strong> We partner with only the best barbershops to ensure you get the quality and service you deserve.</li>
+                </ul>
+    
+                <h2>Our Story</h2>
+                <p>BARBO was founded with a vision to solve one of the most frustrating parts of visiting the barbershop – the wait. Whether it’s an early morning rush or a weekend jam, we’ve all been there. Our founders and co-founders, Himanshu Tiwari Mahesh Patap Singh Tarun pratap singh, set out to change that. With a background in technology and a love for efficiency, BARBO was born to give customers more control over their time.</p>
+    
+                <h2>How It Works</h2>
+                <p>Using BARBO is easy. Simply browse our list of partner barbershops, choose your barber and time slot, and confirm your booking. It’s that simple! Whether you're planning your day or squeezing in a haircut between meetings, we’ve got you covered.</p>
+    
+                <h2>Our Values</h2>
+                <ul>
+                    <li><strong>Convenience:</strong> We prioritize ease of use to ensure every customer gets their haircut without the hassle of waiting.</li>
+                    <li><strong>Quality:</strong> Our partner barbershops are vetted for their high standards, so you know you're getting the best.</li>
+                    <li><strong>Time-Saving:</strong> We understand the value of your time, and our goal is to make every visit efficient and enjoyable.</li>
+                </ul>
+    
+                <h2>Join the BARBO Community</h2>
+                <p>Say goodbye to long waits and hello to a better barber experience. Join the thousands who have already discovered the benefits of booking with BARBO and take control of your time today.</p>
+            </div>
+        </section>
     </main>
+    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+ <section class="contact-us">
+        <div class="containercon">
+            <h1>Contact Us</h1>
+            <p>Have a question or need assistance? We’re here to help! Reach out to us using the form below or through our contact details, and we’ll get back to you as soon as possible.</p>
+
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>Phone:</strong> 6306544751</p>
+                <p><strong>Email:</strong> barbohmt@gmail.com</p>
+                <p><strong>Office Address:</strong>Soon Will Be Updated</p>
+
+                <h2>Business Hours</h2>
+                <p><strong>Monday – Friday:</strong> 9:00 AM – 6:00 PM</p>
+                <p><strong>Saturday:</strong> 10:00 AM – 4:00 PM</p>
+                <p><strong>Sunday:</strong> 9:00 AM – 6:00 PM</p>
+
+                <h2>Follow Us</h2>
+                <p>Stay connected with BARBO: 
+                    <a href="#">Facebook</a> | 
+                    <a href="#">Instagram</a> | 
+                    <a href="#">Twitter</a>
+                </p>
+            </div>
+
+            <div class="contact-form">
+                <h2>Contact Form</h2>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone (Optional):</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+  
+        <section class="join-us">
+            <div class="containerjoin">
+                <h1>Join BARBO</h1>
+                <p>Are you a talented barber looking to expand your client base? Join BARBO and get listed in our app! Fill in the details below to register your profile.</p>
+    
+                <div class="join-form">
+                    <h2>Barber Registration Form</h2>
+                    <form action="#" method="post" enctype="multipart/form-data">
+                        <label for="Aadhar-id">Aadhar ID:</label>
+                        <input type="text" id="Aadhar-id" name="Aadhar-id" required placeholder="Enter your Barber ID">
+    
+                        <label for="barber-name">Full Name:</label>
+                        <input type="text" id="barber-name" name="barber-name" required placeholder="Enter your Full Name">
+    
+                        <label for="barber-photo">Upload Your Photo:</label>
+                        <input type="file" id="barber-photo" name="barber-photo" accept="image/*" required>
+
+                        <label for="barber-shop">Upload Your Shop Photo:</label>
+                        <input type="file" id="barber-shop" name="barber-shop" accept="image/*" required>
+    
+                        <label for="bio">Bio:</label>
+                        <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself (optional)"></textarea>
+    
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+  
+    
 
     <footer>
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <p>&copy; 2024 BARBO  All rights reserved.</p>
     </footer>
+ <script src="script.js"></script>
 </body>
 </html>
